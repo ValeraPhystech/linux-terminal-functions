@@ -1,0 +1,9 @@
+1) Не работает
+
+asandler@Vostro-3300:~/teaching/akos/repos/src/lobov/lab_1/cp$ ls
+cp  cp.o  main.c  Makefile  Message.txt
+asandler@Vostro-3300:~/teaching/akos/repos/src/lobov/lab_1/cp$ ./cp cp.o test
+asandler@Vostro-3300:~/teaching/akos/repos/src/lobov/lab_1/cp$ diff cp.o test 
+Двоичные файлы cp.o и test различаются
+
+2) вывод валгринда не пустой

@@ -1,0 +1,21 @@
+Здравствуйте, Андрей. 
+
+На моей Ubuntu 16.04LTS valgrind не находит утечки: 
+
+==5652== 
+==5652== HEAP SUMMARY:
+==5652==     in use at exit: 1,104 bytes in 2 blocks
+==5652==   total heap usage: 6 allocs, 4 frees, 10,872 bytes allocated
+==5652== 
+==5652== LEAK SUMMARY:
+==5652==    definitely lost: 0 bytes in 0 blocks
+==5652==    indirectly lost: 0 bytes in 0 blocks
+==5652==      possibly lost: 0 bytes in 0 blocks
+==5652==    still reachable: 1,104 bytes in 2 blocks
+==5652==         suppressed: 0 bytes in 0 blocks
+==5652== Reachable blocks (those to which a pointer was found) are not shown.
+==5652== To see them, rerun with: --leak-check=full --show-leak-kinds=all
+==5652== 
+
+Исправил косяк с diff, теперь эта функция не видит разницу между двумя файлами. 
+Буду еще тестить, но пока не вижу багов. Надеюсь, вы что-нибудь найдете :)
