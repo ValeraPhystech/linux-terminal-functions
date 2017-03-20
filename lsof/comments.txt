@@ -1,0 +1,11 @@
+gcc -c -o lsof.o main.c -std=c99
+main.c: В функции «showInfo»:
+main.c:44:35: ошибка: «PATH_MAX» undeclared (first use in this function)
+main.c:44:35: замечание: each undeclared identifier is reported only once for each function it appears in
+main.c:45:13: предупреждение: неявная декларация функции «readlink» [-Wimplicit-function-declaration]
+main.c:61:13: ошибка: unknown type name «uid_t»
+main.c:92:13: предупреждение: неявная декларация функции «S_ISSOCK» [-Wimplicit-function-declaration]
+main.c:96:13: предупреждение: неявная декларация функции «major» [-Wimplicit-function-declaration]
+main.c:96:13: предупреждение: неявная декларация функции «minor» [-Wimplicit-function-declaration]
+main.c:96:13: предупреждение: флаг '0' употреблен с «%s» в формате gnu_printf [-Wformat]
+make: *** [lsof.o] Ошибка 1
